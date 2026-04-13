@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olga Prep — April 13 Briefing</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --maroon: #6B1A1A;
+    --maroon-deep: #4A0F0F;
+    --saffron: #C8821A;
+    --saffron-light: #E8A84A;
+    --cream: #FAF5EC;
+    --cream-dark: #F0E8D5;
+    --ink: #1C1008;
+    --ink-soft: #3D2B1A;
+    --rule: rgba(200,130,26,0.25);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 48px;
+  }
+  .doc-meta {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--maroon);
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--ink-soft);
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin: 40px 0 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--maroon);
+    margin-bottom: 8px;
+  }
+  p { margin-bottom: 12px; color: var(--ink-soft); font-weight: 300; }
+  strong { color: var(--maroon); font-weight: 600; }
+  em { color: var(--maroon); }
+  ul {
+    list-style: none;
+    margin: 12px 0;
+  }
+  ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+    font-weight: 300;
+    color: var(--ink-soft);
+  }
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--saffron);
+  }
+  .status-box {
+    background: var(--maroon-deep);
+    color: var(--cream);
+    padding: 28px 32px;
+    margin: 24px 0;
+  }
+  .status-box h3 { color: var(--saffron-light); margin-bottom: 12px; }
+  .status-box p { color: rgba(250,245,236,0.8); }
+  .status-box strong { color: var(--cream); }
+  .status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 16px;
+  }
+  .status-item {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid rgba(250,245,236,0.15);
+  }
+  .status-num {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    color: var(--saffron-light);
+    display: block;
+  }
+  .status-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    color: var(--cream);
+  }
+  .link-box {
+    border: 1px solid var(--rule);
+    padding: 20px 24px;
+    margin: 16px 0;
+    background: rgba(200,130,26,0.04);
+  }
+  .link-box a {
+    color: var(--maroon);
+    font-weight: 400;
+    word-break: break-all;
+  }
+  .link-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 4px;
+  }
+  .checklist li::before { content: '☐'; color: var(--saffron); }
+  .nav-toc {
+    margin: 24px 0 40px;
+    padding: 20px 24px;
+    border: 1px solid var(--rule);
+    background: rgba(200,130,26,0.04);
+  }
+  .nav-toc a {
+    color: var(--maroon);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 4px 0;
+  }
+  .nav-toc a:hover { color: var(--saffron); }
+  @media print {
+    body { background: white; }
+    .page { padding: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="doc-meta">Briefing Document · April 12, 2026 · Prepared for Brian &amp; Ryan</div>
+
+<h1>Preparing Olga for April 13</h1>
+<p class="subtitle">Everything she needs, organized in one place</p>
+
+<nav class="nav-toc">
+  <a href="#status">1. Where We Stand Right Now</a>
+  <a href="#links">2. Live Links to Share</a>
+  <a href="#script">3. Her Presentation Script</a>
+  <a href="#onepager">4. The One-Pager / Flyer</a>
+  <a href="#talking-points">5. Key Talking Points</a>
+  <a href="#send">6. What to Send Olga Tonight</a>
+</nav>
+
+<h2 id="status">Where We Stand Right Now</h2>
+
+<div class="status-box">
+  <h3>Project Status — April 12, 2026</h3>
+  <div class="status-grid">
+    <div class="status-item">
+      <span class="status-num">$1,100</span>
+      <span class="status-label">Pledged to date</span>
+    </div>
+    <div class="status-item">
+      <span class="status-num">Global</span>
+      <span class="status-label">Singapore group forming</span>
+    </div>
+    <div class="status-item">
+      <span class="status-num">Live</span>
+      <span class="status-label">Website published</span>
+    </div>
+  </div>
+  <p style="margin-top: 16px;"><strong>Funding:</strong> $100 donation received within days of launch. $1,000 pledged by a dharma sister. Funds to be collected through GBI as fiscal umbrella.</p>
+  <p><strong>Groups:</strong> Singapore sangha reached out, already starting group discussion. US groups forming.</p>
+  <p><strong>Translation:</strong> Begins May 2026. Human translator, paid on completion. Target: end of summer. Estimated cost: $2K to $6K total.</p>
+</div>
+
+<h2 id="links">Live Links to Share</h2>
+
+<div class="link-box">
+  <div class="link-label">Main Website (Sangha Initiative)</div>
+  <a href="https://bnuckols13.github.io/37-practices/">https://bnuckols13.github.io/37-practices/</a>
+  <p style="margin-top: 6px; font-size: 14px;">Full landing page with 10-week study plan, facilitator guide, Q&amp;A details, fundraising, and sample invitation.</p>
+</div>
+
+<div class="link-box">
+  <div class="link-label">One-Pager / Flyer (Shareable Link)</div>
+  <a href="https://bnuckols13.github.io/37-practices/flyer.html">https://bnuckols13.github.io/37-practices/flyer.html</a>
+  <p style="margin-top: 6px; font-size: 14px;">Beautiful one-page overview. Print-friendly. Can be shared digitally via this URL or printed to PDF.</p>
+</div>
+
+<div class="link-box">
+  <div class="link-label">Study Platform (Verse-by-Verse App)</div>
+  <a href="https://bnuckols13.github.io/37practices/">https://bnuckols13.github.io/37practices/</a>
+  <p style="margin-top: 6px; font-size: 14px;">Full interactive study tool: all 37 verses, Garchen Rinpoche and Khenpo Sherab Sangpo transcripts, search, structural frameworks, and analytical toolkit. (Separate app, to be integrated later.)</p>
+</div>
+
+<h2 id="script">Her Presentation Script</h2>
+
+<h3>4-Minute Spoken Presentation</h3>
+
+<p>The script is a separate document: <a href="script.html">Open Olga's Script</a></p>
+
+<p>The arc is:</p>
+<ul>
+  <li><strong>Opening (30s):</strong> Rinpoche's quote, "if you follow this text by the letter, you will overcome your suffering"</li>
+  <li><strong>The Project (1 min):</strong> Two things: peer-led study groups worldwide + English translation of her commentary</li>
+  <li><strong>The Book (1 min):</strong> Written during the war, 40+ mindfulness exercises, science-informed, Rinpoche's endorsement and the vajra and bell moment</li>
+  <li><strong>Fundraising (45s):</strong> $2K to $6K goal, $1,100 already pledged, all through GBI</li>
+  <li><strong>How to Participate (30s):</strong> Start a group, support the fund, share with your sangha, weekly Q&amp;As coming</li>
+  <li><strong>Closing (15s):</strong> "Not study as an intellectual exercise, but study as refuge"</li>
+</ul>
+
+<h2 id="onepager">The One-Pager / Flyer</h2>
+
+<p>Hosted at the flyer link above. Contains: Rinpoche's quote, $1,100 pledged stat, Singapore group stat, two-column layout with toolkit details and book details, fundraising goal box, and ways to help. Designed for print or screen.</p>
+
+<p>To share with Olga: send the flyer URL directly. She can open it on her phone or print it.</p>
+
+<h2 id="talking-points">Key Talking Points</h2>
+
+<h3>If someone asks about the book</h3>
+<ul>
+  <li>Written in Ukrainian, begun before the invasion, completed during the war's opening months</li>
+  <li>Recommended alongside Viktor Frankl as a mental health resource during the conflict</li>
+  <li>Over 40 original mindfulness exercises, one per chapter</li>
+  <li>Science-informed: draws on contemporary research alongside classical teachings</li>
+  <li>Rinpoche personally asked for the English translation. Gave her a vajra and bell. Told her he wants her to teach</li>
+  <li>Human translator (not machine), professional quality</li>
+</ul>
+
+<h3>If someone asks about the study groups</h3>
+<ul>
+  <li>10-week format, 90 minutes per session, covering 3 to 4 verses per week</li>
+  <li>Every session opens with: "What do I need refuge from right now in my life?"</li>
+  <li>No experience required. Four to eight people is ideal. Even two and a text is enough</li>
+  <li>Toolkit provides full structure: prayers, session plan, facilitator guidance</li>
+  <li>Recommended commentaries: Dalai Lama, Garchen Rinpoche oral teachings, Geshe Sonam Rinchen, the Karmapa</li>
+  <li>Weekly Q&amp;A sessions with Olga, rotating across US time zones</li>
+</ul>
+
+<h3>If someone asks about money</h3>
+<ul>
+  <li>$2K to $6K total estimated cost (editing, cover design, ISBN, print-on-demand)</li>
+  <li>All funds through GBI (501c3), tax-deductible, no crowdfunding fees</li>
+  <li>$1,100 already pledged in the first days</li>
+  <li>Contact: brianjnuckols@gmail.com to pledge or donate</li>
+</ul>
+
+<h2 id="send">What to Send Olga Tonight</h2>
+
+<h3>Checklist</h3>
+<ul class="checklist">
+  <li>The script link: share the script.html or paste the text into WhatsApp</li>
+  <li>The flyer link: <strong>bnuckols13.github.io/37-practices/flyer.html</strong></li>
+  <li>The main site link: <strong>bnuckols13.github.io/37-practices/</strong></li>
+  <li>A short message: "Here's your 4-minute script for tomorrow and a one-pager you can share or print. The website is live. You've got this."</li>
+</ul>
+
+<p style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--rule); font-style: italic; color: var(--maroon);">Prepared April 12, 2026. All links are live.</p>
+
+</div>
+</body>
+</html>
